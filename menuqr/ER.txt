@@ -1,0 +1,42 @@
+USER
+ └─ id (PK)
+ └─ username
+ └─ email
+ └─ password
+      |
+      | 1
+      |
+      | N
+RESTAURANT
+ └─ id (PK)
+ └─ name
+ └─ slug
+ └─ owner_id (FK)
+      |
+      | 1
+      |
+      | N
+MENU_CATEGORY
+ └─ id (PK)
+ └─ name
+ └─ restaurant_id (FK)
+      |
+      | 1
+      |
+      | N
+MENU_ITEM
+ └─ id (PK)
+ └─ name
+ └─ price
+ └─ category_id (FK)
+
+RESTAURANT
+ └─ id (PK)
+      |
+      | 1
+      |
+      | N
+QR_CODE
+ └─ id (PK)
+ └─ table_number
+ └─ target_url
