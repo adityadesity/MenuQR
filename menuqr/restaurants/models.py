@@ -5,4 +5,4 @@ from accounts.models import RestaurantOwner
 class Restaurants(models.Model):
     name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100)
-    owner_id = models.ForeignKey(to=RestaurantOwner,on_delete=models.CASCADE)
+    owner_id = models.ForeignKey(RestaurantOwner,on_delete=models.CASCADE)
