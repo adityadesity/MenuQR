@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'menu',
     'restaurants',
     'qr',
-    'public'
+    'public',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
